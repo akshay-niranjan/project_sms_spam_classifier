@@ -3,10 +3,11 @@ import pickle
 import string
 from nltk.corpus import stopwords
 import nltk
+nltk.download('punkt_tab')
 from nltk.stem.porter import PorterStemmer
 ps=PorterStemmer()
 
-nltk.download('punkt_tab')
+
 def transform_text(text):
     text=text.lower()
     text=nltk.word_tokenize(text)
